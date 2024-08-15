@@ -6,7 +6,7 @@ function PokemonCard({pokemonData}) {
         <figure className='relative w-full flex justify-center  ' >
             <img className=" w-[60%] h-[8vh] md:h-[7vw]" src={pokemonData.sprites.other.dream_world.front_default} alt={pokemonData.name} />
         </figure>
-        <h1 className="text-[2.2vh] md:text-[2vw] font-bold text-center mt-[4vh]" >{pokemonData.name}</h1>
+        <h1 className="text-[2.2vh] md:text-[2vw] font-bold text-center mt-[4vh] md:mt-[4vw] " >{pokemonData.name}</h1>
         <div className="flex justify-center items-center mb-[3vw] mt-[2vh]" >
           <p className='bg-[#2ecc71] px-3 py-[0.15vh] rounded-lg text-white font-bold capitalize text-[1.2vh] md:text-[1vw]' >
             {
@@ -14,7 +14,7 @@ function PokemonCard({pokemonData}) {
             }
           </p>
         </div>
-        <div className="grid grid-cols-3 text-[1.1vh] md:text-[1vw] justify-center gap-3 mb-5">
+        <div className="grid grid-cols-3 text-[1vh] md:text-[1vw] justify-center md:gap-3 mb-5">
         <p className="pokemon-info">
           <span> Height:</span> {pokemonData.height}
         </p>
@@ -26,7 +26,7 @@ function PokemonCard({pokemonData}) {
         </p>
       </div>
 
-      <div className="grid grid-cols-3 text-[1.1vh] md:text-[1vw] justify-center gap-3">
+      <div className="grid grid-cols-3 text-[1vh] md:text-[1vw] justify-center md:gap-3">
         <div className="pokemon-info">
           <p>{pokemonData.base_experience}</p>
           <span> Experience:</span>

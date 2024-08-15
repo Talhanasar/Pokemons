@@ -56,8 +56,8 @@ function Pokemon() {
                         <input type="text" name="name" id="name" className='outline-none border-b-2 border-zinc-600 mx-2 px-2' autoComplete='off' value={search} onChange={(e) => setSearch(e.target.value)} />
                     </label>
                 </header>
-                <section className='md:p-5 p-2'>
-                    <ul className=' grid grid-cols-2 md:grid-cols-4 gap-5' >
+                <section className='md:p-5 p-3'>
+                    <ul className=' grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-5' >
                         {
                             searchedData.map((current) => {
                                 return <PokemonCard key={current.id} pokemonData={current} />
